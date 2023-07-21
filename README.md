@@ -3,9 +3,9 @@
 
 ## 系统效果展示
 
-<img src="./images/1.jpg" style="zoom:25%;" /> <img src="./images/2.jpg" style="zoom:25%;" /> <img src="./images/3.jpg" style="zoom:25%;" />
+<img src="./images/1.jpg" width="300px" /> <img src="./images/2.jpg" width="300px" /> <img src="./images/3.jpg" width="300px" />
 
-<img src="./images/4.jpg" style="zoom:25%;" /> <img src="./images/6.jpg" style="zoom:25%;" /> <img src="./images/5.jpg" style="zoom:25%;" />
+<img src="./images/4.jpg" width="300px" /> <img src="./images/6.jpg" width="300px" /> <img src="./images/5.jpg" width="300px" />
 
 
 ## 后端部署
@@ -144,7 +144,9 @@ vue不用配置，输入**npm run build**命令即可。输入命令后vue项目
    	include /etc/nginx/sites-enabled/*;
    <font color='red'>的两行代码块，删去一个不需要的即可，例如我把第二行注释掉，只保留/etc/nginx/conf.d/default.conf：</font>
    
-   	include /etc/nginx/conf.d/*.conf;
-   	# include /etc/nginx/sites-enabled/*;
+   ```
+   include /etc/nginx/conf.d/*.conf;
+   # include /etc/nginx/sites-enabled/*;
+   ```
    
    <font color='red'>然后输入nginx -s reload重启nginx服务即可</font>
